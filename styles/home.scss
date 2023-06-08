@@ -1,0 +1,29 @@
+@import "./settings.scss";
+@import "./elements.scss";
+@import "./encabezados.scss";
+@import "./double-button.scss";
+@import "./banner-container.scss";
+@import "./presentation-container.scss";
+@import "./what-offer-video.scss";
+@import "./benefits.scss";
+@import "./price.scss";
+@import "./happy-clients.scss";
+@import "./contact.scss";
+@import "./navigation.scss";
+
+ #video, #benefits, #prices, #happy-clients {
+    margin-top: 10vh;
+}
+
+
+.footer {
+    height: 10vh;
+    background-color: map-get($colors, "black");
+}
+
+.footer__thanks {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}

@@ -1,0 +1,89 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Lighter";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Light.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: map-get($tipographies, "montserrat-bold");
+}
+
+h1, h2 {
+
+  text-transform: uppercase;
+}
+
+h1.with-underline {
+
+  color: map-get($colors, "black");
+  text-transform: uppercase;
+    
+  &:before {
+    content: "";
+    position: absolute;
+    top: 7vh;
+    left: .3rem;
+  }
+}
+
+  h1.with-underline, h2.with-underline {
+    display: block;
+    
+    position: relative;
+    line-height: 10vh;
+
+    &:before {
+      width: 6rem;
+      height: .3rem;
+      background-color: map-get($colors, "black");
+    }
+  }
+
+  h2.with-underline {
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10vh;
+    }
+  }
+
+  h2.small {
+    display: inline-block;
+    font-family: map-get($tipographies, "montserrat");
+
+    
+    font-weight: lighter;
+  }
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+
+    h1 {
+      
+    
+    }
+
+ }
+
+ @media (max-width: 1000px) and (orientation: landscape) {
+    h1.with-underline, h2.with-underline {
+      
+    }
+  }
+
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

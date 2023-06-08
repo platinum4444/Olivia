@@ -1,0 +1,105 @@
+#video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#offer, #video {
+  width: 90vw;
+  margin: auto; }
+
+.offer__title {
+  width: 80vw;
+  margin: auto;
+  margin-top: 0vh; }
+
+#offer > *, #video > * {
+  margin-bottom: 6vh; }
+
+.offer__image {
+  display: none; }
+
+.video__gallery-icons {
+  width: 60vw;
+  margin: auto; }
+
+.video__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: max-content;
+  margin: 5vh 0vh; }
+
+.video__icon-title {
+  text-transform: uppercase; }
+
+.video__gif {
+  max-width: 16vmin;
+  min-height: 16vmin;
+  max-height: 16vmin;
+  margin-bottom: 2vh; }
+
+.video__media {
+  width: 100%; }
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width: 801px) {
+  .video__wrapper {
+    width: 70vw;
+    margin: auto; }
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .video__gallery-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10vh; } }
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px), (orientation: landscape) {
+  .video__gallery-icons {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+
+  .offer__small-gallery-two-pictures {
+    width: 58vw;
+    margin: auto;
+    position: relative;
+    min-height: 65vh; }
+
+  .offer__image {
+    display: inline-block;
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 5px; }
+
+  .offer__image:nth-child(1) {
+    position: absolute;
+    top: 25vh;
+    left: 28vw; }
+
+  .offer__paragraph {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 20vh !important; }
+
+  .video__gallery-icons {
+    width: 80vw;
+    height: auto; }
+
+  .video__icon {
+    width: 25vw;
+    margin: 2.5vh 0 !important; }
+    .video__icon > * {
+      margin: 1vh; } }
+@media (max-width: 1000px) and (orientation: landscape) {
+  .video__icon {
+    margin: 15vh 0; } }
+
+/*# sourceMappingURL=what-offer-video.css.map */

@@ -1,0 +1,172 @@
+
+#prices {
+    max-width: 90vw;
+    margin: auto;
+    min-height: 100vh; 
+}
+
+.prices__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.prices__title {
+    
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.prices__button {
+    margin-top: 4vh;
+}
+
+.prices__item {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-around;
+    border: .2px solid lightgray;
+    margin-bottom: 5vh;
+    
+    
+}
+
+.prices__money {
+    
+    font-size: 14vw;
+    font-weight: bolder;
+}
+
+.prices__benefits {
+
+    width: fit-content;
+
+    & > * {
+        margin-left: 6vw;
+    }
+}
+
+.prices__benefit-description {
+    width: fit-content;
+}
+
+
+.prices__benefit {
+    display: flex;
+    align-items: center;
+
+
+    margin: 0 auto;
+    margin-top: 2vh;
+
+    & > .prices__vector {
+        margin-right: 1vw;
+    }
+    
+}
+
+.prices__vector {
+
+}
+
+
+
+.svg img {
+    max-width: 100%;
+    margin-top: 5vh;
+}
+
+.prices__button {
+    width: 25vw;
+    height: 6vh;
+    line-height: 6vh;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px), (orientation: landscape) { 
+
+    .prices__title {
+        
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+
+    .prices__items {
+        width: 60vmax;
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .prices__item {
+        margin: 0px 25px;
+    }
+
+
+    .prices__benefit {
+        
+       
+     
+    }
+    
+    .svg img {
+        
+        height: 35vh;
+    }
+
+    .prices__money {
+        
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .prices__button {
+        width: 10vw;
+        height: 6vh;
+        line-height: 6vh;
+        
+    }
+
+    .prices__vector img {
+        width: 2vw;
+    }
+ }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+    #prices {
+        min-width: 95vw;
+    }
+
+    .prices__item {
+        min-width: 45vw;
+        min-height: 80vh;
+
+    }
+
+    .prices__button {
+        width: 15vw;
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+
+
+
+    .svg img {   
+        height: 50vh;
+    }
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

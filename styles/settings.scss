@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+$colors: (
+    "ebb": #E9E5E2,
+    "white": #fafafa,
+    "desert": #e9e9e7,
+    "black": #292727
+);
+
+$mobileColors: (
+    "ebb": #EAE6E5,
+    "cape": #394140,
+    "quarter": #F9F5E8,
+    "tosca": #8A4145
+);
+
+$tipographies: (
+    "open": "Roboto",
+    "open-lighter": "Montserrat Lighter",
+    "open-bold": "Montserrat Bold",
+    "raleway": "Raleway"
+);
+
+$breakpoints: (
+    "xs": "320px", /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    "sm": "480px", /* smartphones, Android phones, landscape iPhone */ 
+    "md": "600px", /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    "mdl": "801px", /* tablet, landscape iPad, lo-res laptops ands desktops */
+    "lg": "1025px", /* big landscape tablets, laptops, and desktops */
+    "xl": "1281px" /* hi-res laptops and desktops */
+);
+

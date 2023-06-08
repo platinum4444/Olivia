@@ -1,0 +1,139 @@
+
+#happy-clients {
+    width: 90vw;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 8vh;
+}
+/*
+#slick-slide-control00, #slick-slide-control01 {
+    width: 4vw;
+    height: 4vh;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin: 0px 10px;
+}
+
+#slick-slide-control00:focus , #slick-slide-control01:focus {
+    background-color: black;
+}
+*/
+
+.happy-clients__title {
+    width: 80vw;
+    margin: auto;
+}
+
+.happy-clients__name {
+    display: flex;
+    align-items: center;
+}
+
+.happy-clients__slides {
+
+}
+
+#happy-clients .happy-clients__slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    & > * {
+        margin-top: 2vh;
+    }
+
+}
+
+.happy-clients__separation {
+    width: 2vmax;
+}
+
+.happy-clients__face {
+    width: 30vmax;
+    object-fit: cover;
+    
+}
+
+.happy-clients__experience {
+    width: 90%;
+    text-align: center;
+}
+
+.happy-clients__stars {
+    display: flex;
+    justify-content: center;
+}
+
+.happy-clients__star {
+    
+    max-width: 8vw;
+}
+
+/* Slick styles */
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.happy-clients__name svg {
+    width: 8vw;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/*
+#slick-slide-control00, #slick-slide-control01 {
+
+    border: none;
+    float: left;
+    margin-right: 1vw;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#slick-slide-control00 {
+    background-color: map-get($colors, "black");
+}
+*/
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px), (orientation: landscape) {
+
+    .happy-clients__star {
+        
+        max-width: 2vw;
+    }
+
+    .happy-clients__face {
+        width: 15vmax;
+    }
+
+    .happy-clients__name svg {
+        width: 2vw;
+     
+    }
+
+    .happy-clients__experience {
+        width: 60%;
+        text-align: center;
+    }
+
+  }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+    .happy-clients__experience {
+        
+    }
+
+}

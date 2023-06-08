@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Add fixed size*/
+/* Add prefix */
+/* 
+    ## Example
+    div {
+        @include css3-prefix(transform, scale3d(2.5, 2, 1.5));
+    }
+*/
+/* SCSS */
+/* SCSS */
+/* SCSS */
+/*Include base size*/
+/* SCSS */
+/*
+div {
+    @include text-shorten();
+}
+*/
+/*.foo {
+  @include center(both);
+}
+.foo-parent {
+  position: relative;
+}
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Lighter";
+  src: url("../../../assets/tipography/Montserrat/Montserrat-Light.ttf");
+}
+h1.default {
+  
+}
+
+h2.default {
+  
+}
+
+h1.with-underline {
+  margin-left: 6vw;
+}
+h1.with-underline:before {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  left: 0.3rem;
+}
+
+h1.with-underline:before, h2.with-underline:before {
+  width: 6rem;
+  height: 0.3rem;
+  background-color: #292727;
+}
+
+h2.with-underline:before {
+  content: "";
+  position: absolute;
+  top: 5vw;
+  left: 0.05rem;
+}
+
+h2.default, h2.with-underline {
+  margin: 4rem 0rem;
+  
+}
+
+h1.default, h1.with-underline {
+  display: block;
+  margin-top: 4rem !important;
+  
+  margin-bottom: 6rem;
+  position: relative;
+  
+  color: #292727;
+  text-transform: uppercase;
+}
+
+h3.default {
+  margin-top: 3rem;
+}
+
+h2.small {
+  display: inline-block;
+  margin: 2rem 0rem;
+  
+  font-weight: lighter;
+}
+
+body, .article {
+  color: #292727;
+  font-family: "Raleway", sans-serif;
+}
+
+html, .root {
+  
+  
+}
+
+body, .article {
+  font-family: sans-serif;
+  
+  
+}
+
+h3, .h3 {
+  
+  
+}
+
+h4, .h4 {
+  
+  
+}
+
+h5, .h5 {
+  
+  
+}
+
+a, b, i, strong, em, small, code {
+  
+}
+
+hr, .hr {
+  border: 1px solid;
+}
+
+p {
+  
+  
+}
+
+.stage {
+  display: flex;
+  position: relative;
+  width: 70vw;
+  margin: auto;
+  height: 8rem;
+}
+
+.bus, .finish, .tower {
+  display: block;
+  position: relative;
+  left: 1vw;
+}
+
+.finish {
+  
+  position: relative;
+  top: 2rem;
+  left: 50vw;
+  height: 6rem;
+  z-index: -2;
+  
+  
+}
+
+.tower {
+  position: relative;
+  top: 0rem;
+  left: 10vw;
+  height: 8rem;
+  z-index: -1000;
+  fill: #292727;
+}
+
+
+
+.stage:before {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #292727;
+}
+
+small {
+  font-size: 0.8em;
+}

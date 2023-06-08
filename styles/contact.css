@@ -1,0 +1,104 @@
+#contact {
+  max-width: 90vw;
+  margin: auto;
+  margin-bottom: 10vh; }
+
+.contact__title {
+  width: 80vw;
+  margin: auto; }
+
+.contact__info {
+  margin-bottom: 5vh; }
+
+.contact__social {
+  margin-bottom: 2em; }
+
+.contact__label {
+  display: block;
+  font-weight: bold; }
+
+.contact__input, .contact__area {
+  padding: 10px; }
+
+.contact__area, .contact__input {
+  width: 100%;
+  border: none;
+  background: none;
+  border-bottom: .6px solid darkgray;
+  margin-bottom: 2em; }
+
+.contact__area {
+  height: 15vh; }
+
+.contact__submit {
+  display: block;
+  width: 13em;
+  height: 3em;
+  background: none;
+  border: .9px solid darkgray;
+  margin: auto;
+  margin-bottom: 4em;
+  transition: all .8s ease;
+  cursor: pointer; }
+
+.contact__submit:hover {
+  background-color: #ebbe9d; }
+
+.social__icon {
+  color: #ebbe9d;
+  margin-right: .7em; }
+
+.social__item a {
+  color: black; }
+
+.social__item:nth-child(2):hover, .social__item:nth-child(3):hover {
+  text-decoration: underline; }
+
+.social__list {
+  list-style: none;
+  margin-bottom: 2em; }
+
+.contact__submit {
+  margin: 0; }
+
+.contact__data {
+  width: 85%;
+  margin: auto;
+  margin-top: 4em; }
+
+.contact__svg {
+  margin-top: 10vh;
+  animation-name: liedown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin-bottom: 15vh; }
+
+@keyframes liedown {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(23px); }
+  100% {
+    transform: translateY(0px); } }
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width: 801px) {
+  .contact__data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; }
+
+  .contact__form {
+    grid-row: span 2; }
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */ }
+
+/*# sourceMappingURL=contact.css.map */

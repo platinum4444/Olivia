@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/test-main.css">
+    <title>Check your English level. English with Ollie.</title>
+    <meta name="description" content="How good is your English? Check your grammar and vocabulary for free. Improve your skills with Ollie.">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMR5SPF');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMR5SPF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <style>
+        body {
+            background-color: #FAFAFA;
+        }
+        .box-test-questions {
+            width: 70vw;
+            height: 30vh;
+            margin: auto;
+            margin-top: 10rem;
+            margin-bottom: 10vh;     
+        }
+        .box-test-questions__box-question {
+            display: none;  
+        }
+
+        nav {
+            display: none;
+        }
+
+        .box-test-questions__answer-button {
+            border: none;
+            background-color: transparent;
+            padding: .6rem;
+            border: .4px solid lightgray;
+            text-align: left;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
+            outline: none;
+        }
+
+        .box-test-questions__posible-answers {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-test-questions__posible-answers * {
+            margin: .8rem 0;
+        }
+
+        .box-test-questions__title-question {
+            
+        }
+
+
+        h3, h4 {
+            font-weight: bolder;
+        }
+
+        h3, h4, h5 {
+            margin-bottom: 2vh;
+        }
+    </style>
+    <h1 class="with-underline">English Level Test</h1>
+    <div class="box-test-questions">
+            
+        
+
+    </div>
+   
+    <div class="cont"></div>
+
+    <div class="stage">
+        <img src="./assets/bus.svg" alt="" class="bus">
+        <img src="./assets/flag.svg" alt="" class="finish">
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/test-level.js"></script>
+    <script src="./flowtype.js"></script>
+    <script>
+
+        $('body').flowtype({
+            minimum : 600,
+            maximum : 700,
+        
+        });
+
+        $('h1, h2, h3, h4, h5, h6').flowtype({
+            minimum : 1000,
+            maximum : 1600,
+        
+        });
+
+    </script>
+
+
+
+</body>
+</html>

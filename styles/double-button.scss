@@ -1,0 +1,69 @@
+
+.double-button, .double-button:before {
+    
+    text-decoration: none;
+    border: 1px solid #474747;
+    
+}
+
+.double-button {
+
+    display: block;
+    position: relative;
+    cursor: pointer;
+    
+    width: 25vw;
+
+    min-height: 6vh;
+
+    
+    
+    
+    color: map-get($colors, "black");
+
+
+    &, &:before {
+        transition: all 0.3s ease;
+        background-color: map-get($colors, "white");
+    }
+
+    &:hover, &:hover:before {
+        color: white;
+        background-color: map-get($colors, "black");
+        
+    }
+
+    &:hover:before {
+        border: 1px solid map-get($colors, "white");
+    }
+
+    &:before {
+        content: "";
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+        &:hover {
+            background-color: map-get($colors, "black");
+        }
+    }
+    
+
+    
+}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    .double-button {
+        width: 15vw;
+        height: 5vh;
+        
+    }
+ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

@@ -1,0 +1,51 @@
+
+
+body, .article {
+    color: map-get($colors, "black");
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, .root {
+    
+    
+  }
+
+  body, .article {
+    font-family: sans-serif;
+    
+    
+    
+  }
+
+
+  
+a, b, i, strong, em, small, code {
+    
+}
+
+hr, .hr {
+    border: 1px solid;
+}
+
+p {
+    
+
+}
+  
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+
+    p {
+      
+      
+    }
+
+ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
